@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Management</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>RAILWAY MANAGEMENT SYSTEM</h1>
+    </header>
+    <main>
+        <section>
+            <h4>Welcome to the Railway Management System!</h4>
+        </section>
+        <section>
+            <h4>Enter your choice: </h4>
+            <select id="option-select">
+                <option value="" disabled selected hidden>Choose an option</option>
+                <option value="book-ticket">Book a ticket</option>
+                <option value="status">Check the status of the train</option>
+                <option value="passenger-details">Check the details of the passenger</option>
+            </select>
+            <button onclick="getOption()">Check!</button>
+            <div id="operation"></div>
+        </section>
+    </main>
+    <script src="/static/app.js"></script>
+</body>
+</html>
